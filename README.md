@@ -1,33 +1,86 @@
-<<<<<<< HEAD
-# expense_tracker
-=======
-# vue-expense-tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+# **Expense Tracker 💰**  
 
-## Recommended IDE Setup
+A **Vue.js** application built with the **Composition API**, designed to help users track their income and expenses. The app provides real-time feedback based on balance status and includes a dark/light mode toggle for a better user experience.  
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## **🚀 Features**  
 
-## Customize configuration
+✅ **Track Expenses & Income** – Add and manage transactions easily  
+✅ **Real-time Feedback** –  
+   - **Negative balance?** Get a **roasting message** 🔥  
+   - **Positive balance?** Receive a **motivational message** 🎉  
+✅ **Dark & Light Mode Toggle** 🌗  
+✅ **Smooth Hover Effects** for an interactive UI  
+✅ **Local Storage** – Data persists even after refreshing  
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## **🛠️ Tech Stack**  
 
-## Project Setup
+- **Frontend:** Vue.js (Composition API), HTML, CSS  
+- **State Management:** Vue Composition API  
+- **Storage:** Local Storage  
+- **Styling:** CSS Hover Effects  
+- **Version Control:** Git & GitHub  
 
-```sh
+## **📂 Project Structure**  
+
+```
+/expense-tracker
+│── public/               # Static assets  
+│── src/                  # Main application files  
+│   │── components/       # Reusable UI components  
+│   │── assets/           # Styles & images  
+│   │── App.vue           # Root component  
+│   │── main.js           # Entry point  
+│── package.json          # Dependencies & scripts  
+│── vite.config.js        # Configuration file  
+│── README.md             # Project documentation  
+```
+
+## **🚀 Getting Started**  
+
+### **1️⃣ Clone the Repository**  
+```bash
+git clone https://github.com/pvedha24/expense_tracker.git
+cd expense_tracker
+```
+
+### **2️⃣ Install Dependencies**  
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+### **3️⃣ Run the Application**  
+```bash
 npm run dev
 ```
+Then open `http://localhost:5173` in your browser.
 
-### Compile and Minify for Production
+## **🚀 Deployment**  
 
-```sh
+1️⃣ **Build the project:**  
+```bash
 npm run build
-```
->>>>>>> 7c5d09f (Initial commit)
+```  
+2️⃣ **Deploy to GitHub Pages / Netlify / Vercel**  
+
+## **📸 Screenshots**  
+
+_Add screenshots of your application here_ 📷  
+
+## **💡 Future Enhancements**  
+
+🚀 Add user authentication  
+🚀 Implement transaction categories  
+🚀 Export transaction history as CSV  
+
+## **🤝 Contributing**  
+
+Contributions are welcome! Feel free to fork the repo and submit a PR.  
+
+## **📜 License**  
+
+This project is licensed under the MIT License.  
+
+---
+
+This version **highlights** all the key features you described. Let me know if you want any changes! 🚀
