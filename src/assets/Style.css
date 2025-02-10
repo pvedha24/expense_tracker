@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --primary-color: #956ada;
+  --secondary-color: #a29bfe;
+  --bg-color: #f7f7f7;
+  --text-color: #333;
+  --income-color: #2ecc71;
+  --expense-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  width: 800px;
+  text-align: center;
+  
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+h3 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.inc-exp-container {
+  background: #fdfdfd;
+  justify-content: space-evenly;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 12px;
+
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+  color: #4333d7;
+  padding: 10px;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 2px solid #eee;
+}
+
+.money {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.money.plus {
+  color: var(--income-color);
+}
+
+.money.minus {
+  color: var(--expense-color);
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 2px solid #dddddd;
+  border-radius: 6px;
+  display: block;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  /*background: var(--primary-color);*/
+  background: linear-gradient(90deg, #7f57c1, #a29bfe);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: none;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+  color: #4333d7;
+}
+
+.list li:hover {
+  /*transform: scale(1.02);*/
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.list li.plus {
+  border-left: 6px solid var(--income-color);
+}
+
+.list li.minus {
+  border-left: 6px solid var(--expense-color);
+}
+
+.delete-btn {
+  cursor: pointer;
+  background: var(--expense-color);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --container-bg: #2a2a2a;
+  --primary-color: #bb86fc;
+  --input-bg: #3a3a3a;
+  --input-text: #ffffff;
+  --input-placeholder: #aaaaaa;
+}
+
+.dark-mode body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Container Background */
+.dark-mode .container {
+  background: var(--container-bg);
+}
+
+/* Buttons */
+.dark-mode .btn {
+  background: var(--primary-color);
+}
+
+.dark-mode input, 
+.dark-mode textarea {
+  background: #333 !important; /* Dark background for inputs */
+  color: #ffffff !important; /* White text for readability */
+  border: 1px solid #bb86fc !important; /* Optional: Light border */
+}
+
+/* Ensure placeholder text is visible */
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #aaaaaa; /* Light gray placeholder text */
+}
+
+/* Dark mode styles for transaction list 
+.dark-mode .transaction {
+  color: #eceaf1 !important; /* Ensure text is white 
+  background: #2c2c2c; /* Slightly lighter dark background 
+  border: 1px solid #bb86fc; /* Optional: Give a subtle border 
+  padding: 10px;
+  border-radius: 5px;
+}
+*/
+
+.dark-mode .transaction {
+  background: #444 !important; /* Dark background for transaction boxes */
+  color: #ffffff !important; /* White text for visibility */
+  border: 1px solid #666 !important; /* Subtle border for separation */
+}
+
+/* Ensure income/expense colors are still visible */
+.dark-mode .transaction .income {
+  color: #00ff00 !important; /* Bright green */
+}
+
+.dark-mode .transaction .expense {
+  color: #ff4d4d !important; /* Bright red */
+}
+
+.roast-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff4747;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
