@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+
+# expense_tracker
+=======
+# vue-expense-tracker
+>>>>>>> efee3de (added changes)
 
 # **Expense Tracker 💰**  
 

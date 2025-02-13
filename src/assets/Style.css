@@ -279,3 +279,38 @@ input:focus {
   }
 }
 
+/* Dropdown Styling */
+.form-control select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  appearance: none; /* Hides default browser styles */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23999999' d='M2 0L0 2h4zM2 5l2-2H0z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+/* Dropdown Hover and Focus */
+.form-control select:hover {
+  border-color: var(--primary-color);
+}
+
+.form-control select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(149, 106, 218, 0.5);
+}
+
+/* Dark Mode Dropdown */
+.dark-mode .form-control select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--primary-color);
+}
