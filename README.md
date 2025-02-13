@@ -64,8 +64,9 @@ npm run build
 ```  
 2️⃣ **Deploy to GitHub Pages / Netlify / Vercel**  
  https://verdant-marzipan-1d967d.netlify.app/
-## **📸 Screenshots**  <img width="1470" a<img width="1470" alt="Screenshot 2025-02-10 at 8 04 30 PM" src="https://github.com/user-attachments/assets/048f1ac0-8321-47ff-bceb-dc9b58a285f8" />
-lt="Screenshot 2025-02-10 at 11 49 35 PM" src="https://github.com/user-attachments/assets/96f8c11a-187a-44ec-ab0d-868bc79d6516" />
+## **📸 Screenshots**  
+![image](https://github.com/user-attachments/assets/a1201079-2c41-42d6-91a8-76beeb6e9cca)
+
 
 ## **💡 Future Enhancements**  
 
@@ -81,6 +82,5 @@ Contributions are welcome! Feel free to fork the repo and submit a PR.
 
 This project is licensed under the MIT License.  
 
----
 
 
